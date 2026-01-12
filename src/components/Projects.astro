@@ -1,0 +1,78 @@
+---
+import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import type { ProjectProps } from "@types";
+
+interface Props {
+  projects: ProjectProps[];
+}
+
+const { projects } = Astro.props;
+---
+
+<Section text="Projects" href="projects">
+  {
+    projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
+      const top = 98 + index * 40;
+      return (
+        <div
+          style={`top: ${top}px;`}
+          class="project-card sticky mb-12 rounded-2xl border border-neutral/20 bg-black transition-all duration-300 hover:border-neutral/40"
+        >
+          <div class="bg-difu relative z-[1] grid h-[580px] w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-[length:128px] before:bg-repeat before:opacity-[5%] before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
+            <div class="px-8 pt-10 pb-8">
+              <h3 class="mb-4 font-serif text-2xl font-semibold text-primary md:text-3xl">
+                {name}
+              </h3>
+              <p class="text-base text-neutral-lighter leading-relaxed">{summary}</p>
+              <div class="flex gap-6 pt-8 text-white">
+                <a
+                  href={linkSource}
+                  target="_blank"
+                  class="link-hover after:relative after:bottom-[-5px] after:content-[url(/external.svg)]"
+                >
+                  Source
+                </a>
+                <a
+                  href={linkPreview}
+                  target="_blank"
+                  class="link-hover after:relative after:bottom-[-5px] after:content-[url(/external.svg)]"
+                >
+                  Preview
+                </a>
+              </div>
+            </div>
+            <div class="flex items-end justify-end overflow-hidden">
+              <Image
+                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full"
+                src={image}
+                alt={name}
+                width="736"
+                height="483"
+              />
+            </div>
+          </div>
+        </div>
+      );
+    })
+  }
+</Section>
+
+<style>
+  .text-neutral-lighter {
+    color: #a8b3c1;
+  }
+  
+  .link-hover {
+    transition: all 0.2s ease;
+  }
+  
+  .link-hover:hover {
+    color: #6366f1;
+    text-decoration: underline;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-2px);
+  }
+</style>

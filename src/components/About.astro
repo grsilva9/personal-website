@@ -1,0 +1,32 @@
+---
+import Section from "./Section.astro";
+import type { AboutProps, HeroProps } from "@types";
+
+type Props = AboutProps & Pick<HeroProps, "name">;
+
+const { description } = Astro.props;
+---
+
+<Section text="About" href="about">
+  <div class="flex flex-col items-start">
+    <div class="max-w-3xl text-base text-neutral-lighter leading-[1.8] md:text-lg md:leading-[1.85]" set:html={description} />
+  </div>
+</Section>
+
+<style>
+  .text-neutral-lighter {
+    color: #a8b3c1;
+  }
+  
+  /* Style the links in the description */
+  .text-neutral-lighter :global(a) {
+    color: #6366f1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .text-neutral-lighter :global(a:hover) {
+    color: #818cf8;
+    text-decoration: underline;
+  }
+</style>
