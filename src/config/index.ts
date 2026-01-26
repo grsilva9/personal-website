@@ -31,6 +31,14 @@ export const SITE_CONTENT: SiteContent = {
 
   projects: [
     {
+    name: "World Trade Shock Simulator",
+    summary:
+      "A macroeconomic simulation engine that models global trade shock propagation across 227 countries. Built with Random Forest models trained on 500+ socio-economic indicators from the World Bank and OECD, it predicts cross-country impacts through trade networks and causal chains. Features directional shock propagation, competitor effects, and Monte Carlo uncertainty quantification.",
+    linkPreview: "https://world-trade-simulator.vercel.app/",
+    linkSource: "https://github.com/grsilva9/world-trade-simulator",
+    image: "/world-map.png",
+    },
+    {
       name: "Hawkes LOB Simulator",
       summary:
         "A research-grade Limit Order Book simulator driven by multivariate Hawkes processes. Includes C++ core engine, Python bindings, backtesting framework, and interactive web interface.",
