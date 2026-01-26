@@ -33,10 +33,10 @@ export const SITE_CONTENT: SiteContent = {
     {
     name: "World Trade Shock Simulator",
     summary:
-      "A macroeconomic Monte Carlosimulation engine that models global trade shock propagation across 227 countries. Leverages over 500+ socio-economic indicators from the World Bank and OECD.",
+      "A macroeconomic simulation that models global trade shock propagation across 227 countries. Leverages over 500+ socio-economic indicators from the World Bank and OECD.",
     linkPreview: "https://world-trade-simulator.vercel.app/",
     linkSource: "https://github.com/grsilva9/world-trade-simulator",
-    image: "/world-map-v2.png",
+    image: "/forecast-curves.png",
     },
     {
       name: "Hawkes LOB Simulator",
