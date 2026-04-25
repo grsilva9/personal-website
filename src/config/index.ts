@@ -33,7 +33,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       name: "Atelier — Research Tracker",
       summary:
-        "A local-first tool for managing parallel research manuscripts. Tracks tasks across six non-linear stages (ideation, literature, drafting, code, experiments, aesthetics) and ranks them via a Multi-Criteria Decision Making utility model grounded in expected utility theory and WSJF. React + TypeScript, single-file JSON state.",
+        "A local-first tool for managing parallel research manuscripts. Tracks tasks across six non-linear stages (ideation, literature, drafting, code, experiments, aesthetics) and ranks them via a Multi-Criteria Decision Making utility model.",
       linkSource: "https://github.com/grsilva9/research-atelier",
       image: "/atelier.png",
     },
