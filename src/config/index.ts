@@ -34,6 +34,7 @@ export const SITE_CONTENT: SiteContent = {
       name: "Atelier — Research Tracker",
       summary:
         "A local-first tool for managing parallel research manuscripts. Tracks tasks across stages and ranks them via a Multi-Criteria Decision Making utility model.",
+      linkPreview: "https://research-atelier.vercel.app/",
       linkSource: "https://github.com/grsilva9/research-atelier",
       image: "/atelier.png",
     },
