@@ -33,21 +33,20 @@ const { projects } = Astro.props;
                 >
                   Source
                 </a>
-                <a
-                  href={linkPreview}
-                  target="_blank"
-                  class="link-hover after:relative after:bottom-[-5px] after:content-[url(/external.svg)]"
-                >
-                  Preview
-                </a>
+                {linkPreview && (
+                  <a
+                    href={linkPreview}
+                    target="_blank"
+                    class="link-hover after:relative after:bottom-[-5px] after:content-[url(/external.svg)]"
+                  >
+                    Preview
+                  </a>
+                )}
               </div>
             </div>
             <div class="flex items-end justify-end overflow-hidden">
               <Image
-                class={name.includes("World Trade") 
-                  ? "h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-contain object-center sm:h-[85%] sm:w-full"
-                  : "h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full"
-                }
+                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-contain object-center sm:h-[85%] sm:w-full"
                 src={image}
                 alt={name}
                 width="736"

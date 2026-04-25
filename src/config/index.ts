@@ -31,6 +31,13 @@ export const SITE_CONTENT: SiteContent = {
 
   projects: [
     {
+      name: "Atelier — Research Tracker",
+      summary:
+        "A local-first tool for managing parallel research manuscripts. Tracks tasks across six non-linear stages (ideation, literature, drafting, code, experiments, aesthetics) and ranks them via a Multi-Criteria Decision Making utility model grounded in expected utility theory and WSJF. React + TypeScript, single-file JSON state.",
+      linkSource: "https://github.com/grsilva9/research-atelier",
+      image: "/atelier.png",
+    },
+    {
     name: "World Trade Shock Simulator",
     summary:
       "A macroeconomic simulation that models global trade shock propagation across 227 countries. Leverages over 500+ socio-economic indicators from the World Bank and OECD.",
