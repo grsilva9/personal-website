@@ -33,7 +33,7 @@ export const SITE_CONTENT: SiteContent = {
      {
       name: "Agentic Science — Pipeline Orchestrator",
       summary:
-        "An agentic ML system that orchestrates a full generative-modeling pipeline of medical images. Its tasks spans data preprocessing, training, model generation, evaluation and a final report.",
+        "An agentic ML system that orchestrates a full generative-modeling pipeline of medical images. It handles spans data preprocessing, training, model generation, evaluation and a final reporting.",
       linkPreview: "https://colab.research.google.com/drive/1z301NilcbovtcbwzLjrUE1FQUwK3aoss?usp=sharing",
       linkSource: "https://github.com/grsilva9/agentic-science",
       image: "/agentic-science.png",
