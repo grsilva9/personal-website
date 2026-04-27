@@ -30,6 +30,14 @@ export const SITE_CONTENT: SiteContent = {
   experience: [],
 
   projects: [
+     {
+      name: "Agentic Science — DDPM Pipeline Orchestrator",
+      summary:
+        "An agentic ML system that orchestrates a full generative-modeling pipeline from a natural-language prompt. A PydanticAI agent dispatches typed tool calls across seven stages — data loading, DDPM training (ShuffleNet-v2 UNet), reverse-diffusion sampling, patch-based MMD permutation testing, narrative report writing, and PDF assembly — over MedMNIST datasets. Pluggable LLM backend (Llama, Groq, Gemini, Anthropic).",
+      linkPreview: "https://colab.research.google.com/drive/1z301NilcbovtcbwzLjrUE1FQUwK3aoss?usp=sharing",
+      linkSource: "https://github.com/grsilva9/agentic-science",
+      image: "/agentic-science.png",
+    },
     {
       name: "Atelier — Research Tracker",
       summary:
